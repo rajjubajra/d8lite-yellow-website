@@ -92,7 +92,13 @@ header{
         }
     }   
 }
-
+.promos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
 .promo-block{
     display: flex;
     flex-direction: column;
