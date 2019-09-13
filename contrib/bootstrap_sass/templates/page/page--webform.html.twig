@@ -1,0 +1,32 @@
+
+<div class="layout-container">
+
+  <main role="main">
+      
+    <div class="container contact">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-left">
+            {{ page.header }}
+          </div>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="contact-form">
+            <div class="form-close"><a href="{{url('<front>')}} "><i class="fas fa-times"></i></a></div>
+            {{ page.content }}
+          </div>
+          
+        </div>
+      </div>
+    </div>  
+  </main>
+  
+    {% if page.footer %}
+      <footer role="contentinfo">
+        {{ page.footer }}
+      </footer>
+    {% endif %}
+  
+  </div>{# /.layout-container #}
+  

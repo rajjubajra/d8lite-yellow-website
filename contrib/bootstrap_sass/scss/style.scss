@@ -1,0 +1,273 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+header{
+    a.navbar-brand{
+        display: flex;
+        flex-direction: column;
+        img{
+            border-style: none;
+            max-width: 340px;
+            width: 100%;
+            height: auto;
+            padding: 30px;
+            box-sizing: content-box;
+        }
+        span{
+            font-size: 1rem;
+            font-weight: 100;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #9a4a4a;
+            margin-top: -30px;
+
+        }
+    }
+}
+.layout-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-page{
+    &::before{
+        content: '';
+        border-top: 1px solid #ffcc00;
+        width: 100%;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2.title{
+        font-size: 2.23rem;
+        font-weight: 100;
+    }
+    p{
+        font-size: 1.64062rem;
+        font-weight: 100;
+        margin-top: -15px;
+    }
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2.sub-title{
+        font-size: 0.93rem;
+    }
+    img{
+        width: 50px;
+        height: auto;
+    }
+    .phone {
+        margin-top: -11px;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        font-weight: 100;
+        span.fab.fa-viber {
+            position: relative;
+            top: 2px;
+            margin: 10px;
+            padding: 0px;
+        }
+    }   
+}
+
+.promo-block{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    box-shadow: 1px 1px 2px -1px #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #f9f9f9;
+    background: #f5f5f5;
+    img{
+        width: 30px;
+        height: auto;
+        filter: grayscale(100%);
+        opacity: 0.6;
+    }
+    a{
+        font-size: 0.9rem;
+        color: #444546;
+        font-weight: 100;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+
+    span.promo-title {
+        text-align: center;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #708090;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        text-align: center;
+        color: #708090;
+    }
+}
+
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        a.navbar-brand{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                border-style: none;
+                max-width: 300px;
+                width: 100%;
+                height: auto;
+                padding: 30px;
+            }
+            span{
+                font-size: 0.8rem;
+                font-weight: 100;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #9a4a4a;
+                margin-top: -30px;
+
+            }
+        }
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        border-left: 1px solid #ccc;
+
+        .form-close{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            cursor: pointer;
+            margin: 20px;
+        }
+        h1.title{
+            font-size: 1.5rem;
+            font-weight: 100;
+            margin-bottom: 45px;
+            background: whitesmoke;
+            padding: 5px 40px;
+            border-bottom: 1px solid #ccc;
+        }
+        form{
+            width: 300px;
+            label{
+                font-size: 0.8rem;
+                font-weight: 100;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            input, textarea{
+                border: 0px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            button{
+                margin-top: 20px;
+            }
+            .btn-primary {
+                color:#212529;
+                background-color: #d2d2d2;
+                border-color: #b7b7b7;
+                font-weight: 100;
+                text-align: tra;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    
+}
+
+/* COLORS 
+--------------------------------------------------*/
+
+a {
+    color: $accent-shade;
+}
+
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: $accent-shade !important;
+}
+
+.menu--main li a {
+    color: $primary-shade;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
