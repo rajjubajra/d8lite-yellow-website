@@ -101,10 +101,17 @@ header{
         }
     }  
     .btn-messageme {
+        &::before{
+            content: 'f658';
+            font-size: 2rem;
+        }
         padding: 5px 15px;
         margin: 0px 0px 15px 0px;
         background: whitesmoke;
         border-radius: 3px;
+        a{
+            text-decoration: none;
+        }
     } 
 }
 .promos{
