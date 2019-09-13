@@ -18,9 +18,11 @@ header{
     a.navbar-brand{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img{
             border-style: none;
-            max-width: 340px;
+            max-width: 240px;
             width: 100%;
             height: auto;
             padding: 30px;
