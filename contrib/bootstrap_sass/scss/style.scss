@@ -63,8 +63,9 @@ header{
     justify-content: center;
     align-items: center;
     h2.title{
-        font-size: 2.23rem;
+        font-size: 1.9rem;
         font-weight: 100;
+        letter-spacing: 1px;
     }
     p{
         font-size: 1.64062rem;
@@ -106,6 +107,12 @@ header{
         border-radius: 10px;
         border-bottom: 1px solid #999;
         border-top: 1px solid transparent;
+        &::after{
+            margin-left: 5px;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\10f1d8";
+        }
         &:hover{
             border-top: 1px solid #999;
             transition: border-top 2s;
