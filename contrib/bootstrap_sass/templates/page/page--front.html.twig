@@ -46,9 +46,12 @@
 </div>{# /.layout-container #}
 
 <script>
+  /** Header Image animation **/
   const vHeader_Img = document.querySelector('header img');
-  console.log(vHeader_Img);
-
   vHeader_Img.classList.add('animated',  'fadeInDown',  'slower');
+
+  /** Slogan after logo animation **/
+  const vHeader_Span = document.querySelector('header span');
+  vHeader_Span.classList.add('animated','fadeIn', 'delay-3s', 'slower');
 
 </script>
