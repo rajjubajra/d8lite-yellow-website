@@ -6,6 +6,15 @@ Description: Bootstrap 4 with Sass
 // import files
 @import "import";
 
+
+/**
+animation
+*/
+@keyframes opacity_animation{
+    from{opacity: 0;}
+    to{ opacity: 1; }
+}
+
 /* GENERAL STYLES
 -------------------------------------------------*/
 
@@ -23,13 +32,16 @@ header{
         img{
             border-style: none;
             max-width: 240px;
-            @media(min-width: 1200px){
-                max-width: 340px;
-            }
             width: 100%;
             height: auto;
             padding: 30px;
             box-sizing: content-box;
+            @media(min-width: 1200px){
+                max-width: 340px;
+            }
+            animation-name: opacity_animation;
+            animation-duration: 1s;
+
         }
         span{
             font-size: 0.85rem;
@@ -38,6 +50,9 @@ header{
             text-align: center;
             color: #9a4a4a;
             margin-top: -30px;
+            animation-delay: 1s;
+            animation-name: opacity_animation;
+            animation-direction: 1s;
         }
     }
 }
@@ -62,6 +77,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation-delay: 1s;
+    animation-name: opacity_animation;
+    animation-direction: 2s;
     h2.title{
         font-size: 1.9rem;
         font-weight: 100;
@@ -82,6 +100,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation-delay: 1s;
+    animation-name: opacity_animation;
+    animation-direction: 2s;
     h2.sub-title{
         font-size: 0.93rem;
     }
@@ -131,6 +152,9 @@ header{
     align-items: center;
     width: 100%;
     height: auto;
+    animation-delay: 1s;
+    animation-name: opacity_animation;
+    animation-direction: 2s;
 }
 .promo-block{
     display: flex;
