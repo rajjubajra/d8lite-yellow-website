@@ -46,12 +46,27 @@
 </div>{# /.layout-container #}
 
 <script>
+  
   /** Header Image animation **/
   const vHeader_Img = document.querySelector('header img');
-  vHeader_Img.classList.add('animated',  'fadeInDown',  'slower');
+  vHeader_Img.classList.add('animated',  'fadeInDown',  'slow');
 
   /** Slogan after logo animation **/
   const vHeader_Span = document.querySelector('header span');
-  vHeader_Span.classList.add('animated','fadeIn', 'delay-3s', 'slower');
+  vHeader_Span.classList.add('animated','fadeIn', 'delay-2s', 'slow');
+
+  /** front-page class animation **/
+  const vFront_Page = document.querySelector('.front-page');
+  vFront_Page.classList.add('animated','fadeIn', 'delay-4s', 'fast');
+
+  /** contact **/
+  const vContact = document.querySelector('.contact-block');
+  vContact.classList.add('animated','faceIn', 'delay-5s', 'fast');
+
+  /** promo blocks **/
+  const vPromoBlock = document.querySelector('.view-promo-blocks');
+  vPromoBlock.classList.add('animated','fadeIn', 'delay-5s', 'fast');
+
+
 
 </script>
