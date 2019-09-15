@@ -39,9 +39,6 @@ header{
             @media(min-width: 1200px){
                 max-width: 340px;
             }
-            animation-name: opacity_animation;
-            animation-duration: 1s;
-
         }
         span{
             font-size: 0.85rem;
@@ -50,9 +47,6 @@ header{
             text-align: center;
             color: #9a4a4a;
             margin-top: -30px;
-            animation-delay: 1s;
-            animation-name: opacity_animation;
-            animation-direction: 1s;
         }
     }
 }
@@ -77,9 +71,6 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation-delay: 1s;
-    animation-name: opacity_animation;
-    animation-direction: 2s;
     h2.title{
         font-size: 1.9rem;
         font-weight: 100;
