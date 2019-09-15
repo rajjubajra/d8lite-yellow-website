@@ -105,6 +105,10 @@ header{
         margin: 0px 0px 15px 0px;
         border-radius: 10px;
         border-bottom: 1px solid #999;
+        &:hover{
+            border-top: 1px solid #999;
+            transition: border-top 2s;
+        }
         a{
             text-decoration: none;
             color: #333;
