@@ -6,6 +6,7 @@ global-styling:
     js/global.js: {}
   css:
     component:
+      css/animation.min.css: {}
       css/style.css: {}
   dependencies:
     - core/jquery
