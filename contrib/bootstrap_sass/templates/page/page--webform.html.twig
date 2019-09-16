@@ -34,12 +34,10 @@
 
   const vInput = document.querySelectorAll('input');
   vInput.forEach(function(item){
-        item.addEventListener('focus',function(){
-          item.parentElement.parentElement.childNodes[1].style.color = 'green';
-        });
-        item.addEventListener('focusout',function(){
-          item.parentElement.parentElement.childNodes[1].style.color = '#212529';
-        });
+        
+      const vItem = item.parentElement.parentElement.childNodes[1];
+      console.log(vItem);
+        
   })
 
   const vTextarea = document.querySelector('textarea');
