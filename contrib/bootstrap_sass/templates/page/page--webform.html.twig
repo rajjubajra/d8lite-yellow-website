@@ -35,8 +35,11 @@
   const vTextarea = document.querySelector('textarea');
 
   vTextarea.addEventListener('focus', function(){
-    console.log('mouse focused ');
-  })
+    console.log('focused in texteara');
+    const vParentElement = vTextarea.parentElement;
+    console.log('focus', vParentElement);
+  });
+  
 
 
 
