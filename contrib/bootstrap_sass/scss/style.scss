@@ -290,6 +290,9 @@ header{
                     content: "\f1d8";
                     padding: 5px;
                 }
+                &:hover{
+                    background-color: #708090;  
+                }
             }
         }
     }
