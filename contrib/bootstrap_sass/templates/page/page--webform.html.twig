@@ -32,16 +32,17 @@
   
 <script>
   const vInput = document.querySelectorAll('input');
-  vInput.addEventListener('focus', function(){
-    vInput.forEach(function(item){
-      item.parentElement.parentElement.childNodes[1].style.color = 'green';
-    })
+  vInput.forEach(function(item){
+        item.addEventListener('focus',function(){
+          item.parentElement.parentElement.childNodes[1].style.color = 'green';
+        });
   })
-  vInput.addEventListener('focusout', function(){
-    vInput.forEach(function(item){
+  vInput.forEach(function(item){
+    item.addEventListener('focusout',function(){
       item.parentElement.parentElement.childNodes[1].style.color = '#212529';
-    })
-  })
+    });
+})
+  
 
 
   const vTextarea = document.querySelector('textarea');
