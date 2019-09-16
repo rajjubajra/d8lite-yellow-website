@@ -35,8 +35,16 @@
   const vInput = document.querySelectorAll('input');
 
   vInput.forEach(function(item){      
-      const vItem = item;
-      console.log('input',vItem);
+
+    item.addEventListener('focus', function(){
+        const vItem = item.parentElement;
+        vItem.style.color = 'green'; 
+    })
+    item.addEventListener('focusout',function(){
+      const vItem = item.parentElement;
+      vItem.style.color = '#212529';
+    })
+      
   })
 
   const vTextarea = document.querySelector('textarea');
