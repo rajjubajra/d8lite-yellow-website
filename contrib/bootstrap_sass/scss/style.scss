@@ -10,7 +10,7 @@ Description: Bootstrap 4 with Sass
 /**
 animation
 */
-@keyframes opacity_animation{
+@keyframes fadeOut{
     from{opacity: 0;}
     to{ opacity: 1; }
 }
@@ -266,6 +266,9 @@ header{
                 font-weight: 100;
                 text-transform: uppercase;
                 letter-spacing: 2px;
+                display: none;
+                animation-name: fadeIn;
+                animation-duration: 2s;
             }
             input, textarea{
                 border: 0px;
