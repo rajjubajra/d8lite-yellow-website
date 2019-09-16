@@ -31,19 +31,16 @@
   </div>{# /.layout-container #}
   
 <script>
+
   const vInput = document.querySelectorAll('input');
-  vInput.forEach(function(item, index){
-        item[index].addEventListener('focus',function(){
+  vInput.forEach(function(item){
+        item.addEventListener('focus',function(){
           item.parentElement.parentElement.childNodes[1].style.color = 'green';
         });
+        item.addEventListener('focusout',function(){
+          item.parentElement.parentElement.childNodes[1].style.color = '#212529';
+        });
   })
-  vInput.forEach(function(item, index){
-    item[index].addEventListener('focusout',function(){
-      item.parentElement.parentElement.childNodes[1].style.color = '#212529';
-    });
-})
-  
-
 
   const vTextarea = document.querySelector('textarea');
 
