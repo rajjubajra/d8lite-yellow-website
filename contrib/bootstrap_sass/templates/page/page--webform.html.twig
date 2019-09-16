@@ -32,13 +32,13 @@
   
 <script>
   const vInput = document.querySelectorAll('input');
-  vInput.forEach(function(item){
-        item.addEventListener('focus',function(){
+  vInput.forEach(function(item, index){
+        item[index].addEventListener('focus',function(){
           item.parentElement.parentElement.childNodes[1].style.color = 'green';
         });
   })
-  vInput.forEach(function(item){
-    item.addEventListener('focusout',function(){
+  vInput.forEach(function(item, index){
+    item[index].addEventListener('focusout',function(){
       item.parentElement.parentElement.childNodes[1].style.color = '#212529';
     });
 })
