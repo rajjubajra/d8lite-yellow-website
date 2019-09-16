@@ -39,12 +39,14 @@
     item.addEventListener('focus', function(){
         const vItem = item.parentElement;
         vItem.style.color = 'green'; 
+        item.style.border = '1px solid green';
     })
     item.addEventListener('focusout',function(){
       const vItem = item.parentElement;
       vItem.style.color = '#212529';
+      item.style.border = '';
     })
-      
+
   })
 
   const vTextarea = document.querySelector('textarea');
@@ -52,11 +54,13 @@
   vTextarea.addEventListener('focus', function(){
     const vParentElement = vTextarea.parentElement.parentElement.childNodes[1];
     vParentElement.style.color = 'green';
+    vTextarea.style.border = '1px solid green';
   });
 
   vTextarea.addEventListener('focusout', function(){
     const vParentElement = vTextarea.parentElement.parentElement.childNodes[1];
     vParentElement.style.color = '#212529';
+    vTextarea.style.border = '';
   })
 
 
