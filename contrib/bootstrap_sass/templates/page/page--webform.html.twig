@@ -36,7 +36,7 @@
 
   vTextarea.addEventListener('focus', function(){
     console.log('focused in texteara');
-    const vParentElement = vTextarea.parentElement.parentElement.childNodes;
+    const vParentElement = vTextarea.parentElement.parentElement.childNodes[1];
     console.log('focus', vParentElement);
   });
 
