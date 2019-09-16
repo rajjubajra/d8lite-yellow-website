@@ -29,13 +29,13 @@
     {% endif %}
   
   </div>{# /.layout-container #}
-  
+
 <script>
 
   const vInput = document.querySelectorAll('input');
   vInput.forEach(function(item){
         
-      const vItem = item.parentElement.parentElement.childNodes[1];
+      const vItem = item.parentElement;
       console.log(vItem);
         
   })
